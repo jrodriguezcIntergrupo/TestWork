@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build:prod": "npm run lint && ng build --prod",
+    "build:produrl": "npm run lint && ng build --prod --base-href",
+    "test": "ng test --sourceMap=false",
+    "test:cov": "ng test --no-watch --code-coverage --no-progress --sourceMap=false --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

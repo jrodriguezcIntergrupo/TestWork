@@ -48,6 +48,8 @@
       "debug",
       "info",
       "time",
+      "log",
+      "warn",
       "timeEnd",
       "trace"
     ],
